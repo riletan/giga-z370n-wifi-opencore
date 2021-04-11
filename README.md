@@ -70,7 +70,7 @@ then reboot!
 
     
 # Result
-![big sur](https://github.com/riletan/giga-z370n-wifi-opencore/blob/master/z370n.png)
+![big sur](https://github.com/riletan/giga-z370n-wifi-opencore/blob/master/z370n_info.png)
 
 # Credit
 
