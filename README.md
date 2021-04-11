@@ -8,7 +8,7 @@ Tested with lastest macos version (11.2.3)
 ```
 Motherboard: GIGABYTE H370N Wifi
 CPU: Intel® Core™ i7 6700
-Ram: 16gb (2x8GB - 2666) CRUCIAL Ballistix Sport LT
+Ram: 16gb (2x8GB - 2666) CRUCIAL Ballistix Sport
 VGA: MSI Radeon RX 560 Aero ITX
 SSD: Western Digital Blue SN550 500GB PCIe Gen3 x4 NVMe
 Wifi: bcm94360cs2
@@ -46,23 +46,31 @@ CSM -> Disabled
 sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 ```
 
-## Mount  and copy This EFI folder into EFI Partition
-Using Drop EFI
+## Mount  and copy This EFI folder into EFI Partition 
+Using Drop EFI to mount efi partition
 [https://github.com/chris1111/Drop-EFI]
-GenSMBOS
-[https://github.com/corpnewt/GenSMBIOS]
+
+Using GenSMBIOS[https://github.com/corpnewt/GenSMBIOS] to generate your SMBIOS,
+Choose iMac 19,1
 
 ```
 git clone https://github.com/corpnewt/GenSMBIOS
 cd GenSMBIOS
 chmod +x GenSMBIOS.command
 ```
-Copy EFI into EFI Partition on USB Installer
+
+There are 2 configuration file. One for iGPU, no VGA, the other for external VGA.
+
+Pick one and rename it to config.plist (Default for dVGA) then copy the EFI folder into EFI Partition on USB Installer
 
 ## Post Install
+
+Copy EFI folder into Startup Disk,
+then reboot!
+
     
 # Result
-![big sur](./z370.png)
+![big sur](https://github.com/riletan/giga-z370n-wifi-opencore/blob/master/z370n.png)
 
 # Credit
 
