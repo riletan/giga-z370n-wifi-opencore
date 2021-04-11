@@ -1,4 +1,4 @@
-# Hackintosh Gigabye Z370N - Wifi
+# Hackintosh Gigabyte Z370N - Wifi
 A hackintosh and mini itx build by me
 
 Tested with lastest macos version (11.2.3)
